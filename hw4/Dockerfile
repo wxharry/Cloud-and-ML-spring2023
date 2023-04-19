@@ -13,5 +13,5 @@ RUN pip install -r requirements.txt
 ADD mnist/main.py  /app/main.py
 
 # Allow additional arguments to be passed in at runtime
-CMD [ "python", "main.py", "--dry-run", "--epochs=2"]
+CMD [ "python", "main.py"]
 

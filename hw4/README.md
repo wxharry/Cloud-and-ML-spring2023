@@ -28,4 +28,14 @@ docker build -t pytorch-mnist .
 
 ```
 docker run pytorch-mnist
+# Or
+docker run pytorch-mnist python main.py --dry-run --epochs=2 2>&1 | tee docker-run.out
 ```
+
+## References
+[Lecture6-Introduce-Docker.pdf](https://brightspace.nyu.edu/content/enforced/247542-SP23_CSCI-GA_3033_1_085/Lecture6-Introduce-Docker.pdf)
+
+[docker example repository](https://github.com/yuhaohaoyu/ibmcloud-fall-2022)
+
+[mnist example repository](https://github.com/pytorch/examples/tree/main/mnist)
+
