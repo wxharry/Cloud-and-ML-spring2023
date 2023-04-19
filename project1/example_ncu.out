@@ -1,0 +1,96 @@
+/home/xw2788/examples/imagenet/main.py:100: UserWarning: You have chosen a specific GPU. This will completely disable data parallelism.
+  warnings.warn('You have chosen a specific GPU. This will completely '
+==PROF== Connected to process 176754 (/ext3/miniconda3/bin/python3.9)
+Use GPU: 0 for training
+=> creating model 'resnet18'
+==PROF== Profiling "computeOffsetsKernel" - 1: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x32_relu_medi..." - 2: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 3: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_kernel_NCHW" - 4: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 5: 0%....50%....100% - 1 pass
+==PROF== Profiling "max_pool_forward_nchw" - 6: 0%....50%....100% - 1 pass
+==PROF== Profiling "generateWinogradTilesKernel" - 7: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 8: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 9: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_singleread" - 10: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 11: 0%....50%....100% - 1 pass
+==PROF== Profiling "generateWinogradTilesKernel" - 12: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 13: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 14: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_singleread" - 15: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 16: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 17: 0%....50%....100% - 1 pass
+==PROF== Profiling "generateWinogradTilesKernel" - 18: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 19: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 20: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_singleread" - 21: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 22: 0%....50%....100% - 1 pass
+==PROF== Profiling "generateWinogradTilesKernel" - 23: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 24: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 25: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_singleread" - 26: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 27: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 28: 0%....50%....100% - 1 pass
+==PROF== Profiling "nchwToNhwcKernel" - 29: 0%....50%....100% - 1 pass
+==PROF== Profiling "nchwToNhwcKernel" - 30: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 31: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x32_sliced1x4..." - 32: 0%....50%....100% - 1 pass
+==PROF== Profiling "nhwcToNchwKernel" - 33: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 34: 0%....50%....100% - 1 pass
+==PROF== Profiling "bn_fw_tr_1C11_singleread" - 35: 0%....50%....100% - 1 pass
+==PROF== Profiling "vectorized_elementwise_kernel" - 36: 0%....50%....100% - 1 pass
+==PROF== Profiling "generateWinogradTilesKernel" - 37: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 38: 0%....50%....100% - 1 pass
+Epoch: [0][1/1] Time  9.650 ( 9.650)    Data  0.158 ( 0.158)    Loss 7.2213e+00 (7.2213e+00)    Acc@1   0.00 (  0.00)   Acc@5   0.00 (  0.00)
+==PROF== Target process 178876 terminated before first instrumented API call.
+==PROF== Target process 178892 terminated before first instrumented API call.
+==PROF== Target process 178884 terminated before first instrumented API call.
+==PROF== Target process 181023 terminated before first instrumented API call.
+==PROF== Target process 181024 terminated before first instrumented API call.
+==PROF== Target process 181025 terminated before first instrumented API call.
+==PROF== Target process 181022 terminated before first instrumented API call.
+Test: [1/1]     Time  0.178 ( 0.178)    Loss 0.0000e+00 (0.0000e+00)    Acc@1 100.00 (100.00)   Acc@5 100.00 (100.00)
+ *   Acc@1 100.000 Acc@5 100.000
+==PROF== Disconnected from process 176754
+[176754] python3.9@127.0.0.1
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 14)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3), 2023-Apr-13 11:22:36, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    dram__bytes_read.sum.per_second                                           Gbyte/second                         407.43
+    dram__bytes_write.sum.per_second                                          Gbyte/second                         392.91
+    dram__sectors_read.sum                                                          sector                        1254487
+    dram__sectors_write.sum                                                         sector                        1209773
+    smsp__cycles_elapsed.sum                                                         cycle                       41273496
+    smsp__cycles_elapsed.sum.per_second                                      cycle/nsecond                         418.90
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float>, unsigned int, float, (int)4>>(T3), 2023-Apr-13 11:22:39, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    dram__bytes_read.sum.per_second                                           Gbyte/second                         377.25
+    dram__bytes_write.sum.per_second                                          Gbyte/second                          20.83
+    dram__sectors_read.sum                                                          sector                        1254727
+    dram__sectors_write.sum                                                         sector                          69277
+    smsp__cycles_elapsed.sum                                                         cycle                       44383680
+    smsp__cycles_elapsed.sum.per_second                                      cycle/nsecond                         417.01
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       62464000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                         204800
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_sgemm_64x32_sliced1x4_tn, 2023-Apr-13 11:22:42, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    dram__bytes_read.sum.per_second                                           Gbyte/second                         103.96
+    dram__bytes_write.sum.per_second                                          Gbyte/second                          19.65
+    dram__sectors_read.sum                                                          sector                         282240
+    dram__sectors_write.sum                                                         sector                          53341
+    smsp__cycles_elapsed.sum                                                         cycle                       36065928
+    smsp__cycles_elapsed.sum.per_second                                      cycle/nsecond                         415.12
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                        4325376
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                      278265856
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                        5767168
+    ---------------------------------------------------------------------- --------------- ------------------------------
