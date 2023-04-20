@@ -1,0 +1,1372 @@
+==PROF== Target process 116446 terminated before first instrumented API call.
+==PROF== Connected to process 116282 (/usr/bin/python3.8)
+==PROF== Profiling "generateWinogradTilesKernel" - 1: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_winograd_128x128..." - 2: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 3: 0%....50%....100% - 1 pass
+Allocated: 5.0 MB
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 32, 26, 26]             320
+            Conv2d-2           [-1, 64, 24, 24]          18,496
+           Dropout-3           [-1, 64, 12, 12]               0
+            Linear-4                  [-1, 128]       1,179,776
+           Dropout-5                  [-1, 128]               0
+            Linear-6                   [-1, 10]           1,290
+================================================================
+Total params: 1,199,882
+Trainable params: 1,199,882
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.52
+Params size (MB): 4.58
+Estimated Total Size (MB): 5.10
+----------------------------------------------------------------
+epoch 1
+==PROF== Profiling "winogradForwardData4x4" - 4: 0%....50%....100% - 1 pass
+==PROF== Profiling "winogradForwardFilter4x4" - 5: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_sgemm_64x64_nn" - 6: 0%....50%....100% - 1 pass
+==PROF== Profiling "winogradForwardOutput4x4" - 7: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 8: 0%....50%....100% - 1 pass
+Allocated: 27.2 MB
+==PROF== Target process 127153 terminated before first instrumented API call.
+==PROF== Profiling "computeOffsetsKernel" - 9: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 10: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 11: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 12: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 13: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 14: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 15: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 16: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 17: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 18: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 19: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 20: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 21: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 22: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 23: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 24: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 25: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 26: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 27: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 28: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 29: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 30: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 31: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 32: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 33: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 34: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 35: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 36: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 37: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 38: 0%....50%....100% - 1 pass
+Allocated: 178.2 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+
+Test set: Average loss: 2.4193, Accuracy: 2357/10000 (24%)
+
+epoch 2
+==PROF== Target process 127714 terminated before first instrumented API call.
+==PROF== Profiling "winogradForwardData4x4" - 39: 0%....50%....100% - 1 pass
+==PROF== Profiling "winogradForwardFilter4x4" - 40: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_sgemm_64x64_nn" - 41: 0%....50%....100% - 1 pass
+==PROF== Profiling "winogradForwardOutput4x4" - 42: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 43: 0%....50%....100% - 1 pass
+Allocated: 44.5 MB
+==PROF== Target process 128861 terminated before first instrumented API call.
+==PROF== Profiling "computeOffsetsKernel" - 44: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 45: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 46: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 47: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 48: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 49: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 50: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 51: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 52: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 53: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 54: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 55: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 56: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 57: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 58: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 59: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 60: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 61: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 62: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 63: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 64: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 65: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 66: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 67: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 68: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 69: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 70: 0%....50%....100% - 1 pass
+==PROF== Profiling "computeOffsetsKernel" - 71: 0%....50%....100% - 1 pass
+==PROF== Profiling "volta_scudnn_128x64_relu_inte..." - 72: 0%....50%....100% - 1 pass
+==PROF== Profiling "elementwise_kernel" - 73: 0%....50%....100% - 1 pass
+Allocated: 178.2 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+Allocated: 178.3 MB
+
+Test set: Average loss: 2.2441, Accuracy: 2600/10000 (26%)
+
+==PROF== Target process 128996 terminated before first instrumented API call.
+==PROF== Disconnected from process 116282
+[116282] python3.8@127.0.0.1
+  void cudnn::winograd::generateWinogradTilesKernel<(int)0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<T2, T3>), 2023-Mar-27 15:46:06, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                          25.60
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                            128
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                           8192
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         153.60
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                            768
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                          49152
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                          38.40
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                            192
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                          12288
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1, 2023-Mar-27 15:46:07, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                        4147.20
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                          13824
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                        1327104
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       40396.80
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         134656
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       12926976
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:07, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         230.40
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                            256
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                            192
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                          73728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>), 2023-Mar-27 15:46:13, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                       19353.60
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                          26880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                          10752
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                        6193152
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                          13824
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                          19200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                           7680
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                        4423680
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                        8294.40
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          11520
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                           4608
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                        2654208
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>), 2023-Mar-27 15:46:13, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         172.80
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                           1728
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                          55296
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         172.80
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                           1728
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                          55296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_sgemm_64x64_nn, 2023-Mar-27 15:46:13, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                      530841.60
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         655360
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                         524288
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                      169869312
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                       16588.80
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          20480
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                          16384
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                        5308416
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>), 2023-Mar-27 15:46:13, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                       51609.60
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                          66176
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                          39040
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       16515072
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                          53248
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                          68352
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          40192
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       17039360
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                          35328
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          42752
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                          29824
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       11304960
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:13, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                        7372.80
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                           9472
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                           5184
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                        2359296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:16, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:16, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:16, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         159104
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          91328
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:16, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:16, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         166784
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          89152
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         154048
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          87424
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:17, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         167744
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          86464
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         168000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          91904
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:18, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         171008
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          74752
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         163712
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          89344
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:19, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         172544
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          79104
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         165376
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          90176
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:20, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         156160
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          88320
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>), 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                       19353.60
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                          26880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                          10752
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                        6193152
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                          13824
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                          19200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                           7680
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                        4423680
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                        8294.40
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          11520
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                           4608
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                        2654208
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>), 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         172.80
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                           1728
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                          55296
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         172.80
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                           1728
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                          55296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_sgemm_64x64_nn, 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                      530841.60
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         720896
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                         524288
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                      169869312
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                       16588.80
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          22528
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                          16384
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                        5308416
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>), 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                       51609.60
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                          65664
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                          34048
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       16515072
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                          53248
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                          67840
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          35072
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       17039360
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                          35328
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                          41856
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                          25600
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       11304960
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                        7372.80
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                          10368
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                           5504
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                        2359296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:21, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         170240
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          66304
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         169984
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          77120
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:22, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         167360
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          89216
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         164288
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          78912
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:23, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         159552
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          82688
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         160384
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          89024
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:24, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         163584
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          86592
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         165760
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          89728
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:25, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:26, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:26, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         169536
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          83328
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void cask_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn::ComputeOffsetsParams), 2023-Mar-27 15:46:26, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  volta_scudnn_128x64_relu_interior_nn_v1, 2023-Mar-27 15:46:26, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                       33177600
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                       35389440
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                       30670848
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                    10616832000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                         122880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                         106496
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                       36864000
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3), 2023-Mar-27 15:46:26, Context 1, Stream 7
+    Section: Command line profiler metrics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum                               inst                              0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.avg                               inst                         115200
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.max                               inst                         158784
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.min                               inst                          82624
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum                               inst                       36864000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.avg                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.max                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.min                               inst                              0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum                               inst                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+

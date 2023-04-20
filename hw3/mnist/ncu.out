@@ -1,0 +1,71 @@
+==PROF== Target process 490590 terminated before first instrumented API call.
+==PROF== Connected to process 490535 (/usr/bin/python3.8)
+start Allocated: 4864.0 KB
+stop Allocated: 5152.0 KB
+diff Allocated:288.0 KB
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 32, 26, 26]             320
+            Conv2d-2           [-1, 64, 24, 24]          18,496
+           Dropout-3           [-1, 64, 12, 12]               0
+            Linear-4                  [-1, 128]       1,179,776
+           Dropout-5                  [-1, 128]               0
+            Linear-6                   [-1, 10]           1,290
+================================================================
+Total params: 1,199,882
+Trainable params: 1,199,882
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.52
+Params size (MB): 4.58
+Estimated Total Size (MB): 5.10
+----------------------------------------------------------------
+epoch 1
+start Allocated: 18613.0 KB
+stop Allocated: 27829.0 KB
+diff Allocated:9216.0 KB
+==PROF== Target process 492793 terminated before first instrumented API call.
+==PROF== Target process 493277 terminated before first instrumented API call.
+WARNING:2023-03-28 11:58:40 490535:490535 init.cpp:146] function cbapi->getCuptiStatus() failed with error CUPTI_ERROR_MULTIPLE_SUBSCRIBERS_NOT_SUPPORTED (39)
+WARNING:2023-03-28 11:58:40 490535:490535 init.cpp:147] CUPTI initialization failed - CUDA profiler activities will be missing
+INFO:2023-03-28 11:58:40 490535:490535 init.cpp:149] If you see CUPTI_ERROR_INSUFFICIENT_PRIVILEGES, refer to https://developer.nvidia.com/nvidia-development-tools-solutions-err-nvgpuctrperm-cupti
+STAGE:2023-03-28 11:58:40 490535:490535 ActivityProfilerController.cpp:311] Completed Stage: Warm Up
+STAGE:2023-03-28 11:58:40 490535:490535 ActivityProfilerController.cpp:317] Completed Stage: Collection
+STAGE:2023-03-28 11:58:40 490535:490535 ActivityProfilerController.cpp:321] Completed Stage: Post Processing
+start Allocated: 123006.0 KB
+stop Allocated: 182506.0 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+start Allocated: 123053.5 KB
+stop Allocated: 182553.5 KB
+diff Allocated:59500.0 KB
+
+Test set: Average loss: 2.4193, Accuracy: 2357/10000 (24%)
+
+==PROF== Disconnected from process 490535
+==WARNING== No kernels were profiled.
