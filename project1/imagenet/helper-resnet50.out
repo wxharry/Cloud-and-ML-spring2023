@@ -1,0 +1,14 @@
+fadd = 4998813504.0
+ffma = 16359409856.0
+fmul = 5674862272.0
+dram_write = 453513960.0
+dram_read = 726471496.0
+cycle_sum = 20122887000.0
+cycle_per_sec = 144663.9100000001
+dram_read_per_sec = 167120.59999999998
+dram_write_per_sec = 68249.43999999996
+FLOPs = 4.3e+10
+memory = 3.7e+07 MB
+time = 4.3e+07 ns
+AI = 1.15 FLOP/byte
+perf = 1017.49 GFLOP/s
