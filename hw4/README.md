@@ -30,6 +30,8 @@ docker build -t pytorch-mnist .
 docker run pytorch-mnist
 # Or
 docker run pytorch-mnist python main.py --dry-run --epochs=2 2>&1 | tee docker-run.out
+# Or, to have mounted directory
+docker run -v /workspace/Cloud-and-ML-spring2023/hw4/mnist/:/app/ pytorch-mnist python main.py --dry-run --epochs=2 2>&1 | tee docker-run.out
 ```
 
 ## References
