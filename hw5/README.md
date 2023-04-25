@@ -13,6 +13,27 @@ the data set)
 * Persistent storage
   * PVC from IBM Cloud Block Stoarge
 
+## Step
+1. run mnist training program
+
+``` bash
+cd mnist
+
+docker build -t wxharry/mnist-train .
+
+docker run -v /workspace/Cloud-and-ML-spring2023/hw5/model:/model -v /workspace/Cloud-and-ML-spring2023/hw5/mnist:/app wxharry/mnist-train python main.py --epochs=2 --save-model
+```
+
+2. run mnist app service
+
+``` bash
+cd app
+
+docker build -t wxharry/mnist-app .
+
+docker run -v /workspace/Cloud-and-ML-spring2023/hw5/model:/model -v /workspace/Cloud-and-ML-spring2023/hw5/app:/app -p 8080:5000 wxharry/mnist-app
+```
+
 
 ## My report
 
