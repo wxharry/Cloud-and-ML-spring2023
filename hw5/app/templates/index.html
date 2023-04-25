@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Classification</title>
+</head>
+<body>
+  <h1>Image Classification</h1>
+  <form class="board" method="POST" enctype="multipart/form-data">
+    <div>
+      <label for="image_uploads" class="upload">Upload</label>
+      <input
+        type="file"
+        id="image_uploads"
+        name="file"
+        accept=".jpg, .jpeg, .png"
+        class="visually-hidden"
+         />
+
+      <label for="submit" class="upload">Predict</label>
+      <input type="submit" id="submit" class="visually-hidden">
+    </div>
+    <div class="preview">
+      <p>No files currently selected for upload</p>
+    </div>
+  </form>
+  
+  {% if predicted is defined %}
+  <div style="display: flex; margin-top: 50px;">
+      <img src="data:image/jpeg;base64,{{ img_data }}" />
+      <p style="margin: 10px;">Prediction: {{ predicted }} ({{ (probability * 100)|round(2, 'floor') }}% confidence)</p>
+  </div>
+  {% endif %}
+</body>
+
+
+<script>
+const input = document.querySelector('input');
+const preview = document.querySelector('.preview');
+input.style.opacity = 0;
+input.addEventListener('change', updateImageDisplay);
+function updateImageDisplay() {
+  while(preview.firstChild) {
+    preview.removeChild(preview.firstChild);
+  }
+
+  const curFiles = input.files;
+  if (curFiles.length === 0) {
+    const para = document.createElement('p');
+    para.textContent = 'No files currently selected for upload';
+    preview.appendChild(para);
+  } else {
+    const file = curFiles[0];
+    const image = document.createElement('img');
+    image.src = URL.createObjectURL(file);
+    preview.appendChild(image);
+    }
+}
+</script>
+<style>
+.board {
+  background-color: rgb(236, 236, 236);
+    padding: 10px;
+    width: 350px;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+input.visually-hidden:is(:focus, :focus-within) + label {
+  outline: thin dotted;
+}
+
+.upload {
+  background-color:dodgerblue;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-bottom: 3px;
+  color: aliceblue;
+}
+
+.upload:hover {
+  background-color:lightblue;
+}
+
+.upload:active {
+  background-color:lightgray;
+}
+
+img {
+  width: 50px;
+  margin: 10px;
+}
+.preview {
+  margin: 3px;
+  background-color: white;
+  line-height: 30px;
+  padding-left: 3px;
+  border-radius: 2px;
+}
+</style>
+</html>

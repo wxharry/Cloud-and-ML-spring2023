@@ -17,3 +17,5 @@ the data set)
 ## My report
 
 ## References
+[mnist | TensorFlow](https://www.tensorflow.org/datasets/catalog/mnist)
+[Pytorch | saving-loading-model-for-inference](https://pytorch.org/tutorials/beginner/saving_loading_models.html#saving-loading-model-for-inference)
