@@ -1,0 +1,30 @@
+# Deployment for mnist app
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mnist-app
+  template:
+    metadata:
+      labels:
+        app: mnist-app
+    spec:
+      containers:
+      - name: mnist-app
+        image: wxharry/mnist-app:latest
+        imagePullPolicy: Always
+        command: ["python"]
+        args: ["app.py"]
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: model-volume
+          mountPath: /models
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: model-pvc

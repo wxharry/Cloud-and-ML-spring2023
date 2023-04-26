@@ -1,0 +1,31 @@
+# Job for training mnist model
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mnist-training
+spec:
+  template:
+    metadata:
+      name: mnist-training
+    spec:
+      containers:
+      - name: mnist-train
+        image: wxharry/mnist-train
+        imagePullPolicy: Always
+        command: ["python", "main.py"]
+        args: ["--epochs=2", "--save-model"]
+        volumeMounts:
+        - name: model-volume
+          mountPath: /models
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "500Mi"
+      restartPolicy: Never
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: model-pvc
