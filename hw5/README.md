@@ -40,5 +40,7 @@ docker run -v /workspace/Cloud-and-ML-spring2023/hw5/model:/model -v /workspace/
 
 ## References
 [mnist | TensorFlow](https://www.tensorflow.org/datasets/catalog/mnist)
+
 [Pytorch | saving-loading-model-for-inference](https://pytorch.org/tutorials/beginner/saving_loading_models.html#saving-loading-model-for-inference)
+
 [Setting up Ingress | IBM Cloud docs](https://cloud.ibm.com/docs/containers?topic=containers-managed-ingress-setup)
