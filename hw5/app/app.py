@@ -68,11 +68,11 @@ def index():
         img_bytes = file.read()
         img = Image.open(io.BytesIO(img_bytes))
         # Convert the image to grayscale
-        img = ImageOps.grayscale(img).resize((28, 28))
+        img = ImageOps.grayscale(img)
         # Invert the image (black to white and vice versa)
         if not isBackgroundBlack(img):
             img = ImageOps.invert(img)
-            print(list(img.getdata()))
+        img = img.resize((28, 28))
         img = transform(img)
         img = img.unsqueeze(0)
         
