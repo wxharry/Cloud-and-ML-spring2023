@@ -4,10 +4,9 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn as nn
 import torchvision.transforms as transforms
-from PIL import Image
-from flask import Flask, jsonify, request, render_template
+from PIL import Image, ImageOps
+from flask import Flask, request, render_template
 import argparse
-import os
 import io
 import base64
 
@@ -68,6 +67,12 @@ def index():
         # Read the file contents and transform the image
         img_bytes = file.read()
         img = Image.open(io.BytesIO(img_bytes))
+        # Convert the image to grayscale
+        img = ImageOps.grayscale(img).resize((28, 28))
+        # Invert the image (black to white and vice versa)
+        if not isBackgroundBlack(img):
+            img = ImageOps.invert(img)
+            print(list(img.getdata()))
         img = transform(img)
         img = img.unsqueeze(0)
         
@@ -98,6 +103,17 @@ def arg_parse():
     parser = argparse.ArgumentParser(description='MNIST service provider')
     parser.add_argument('--model-path', type=str, required=True, help='Specify model path')
     return parser.parse_args()
+
+def isBackgroundBlack(img):
+    pixels = list(img.getdata())
+
+    # Calculate the mean pixel value
+    num_pixels = len(pixels)
+    pixel_sum = sum(pixels)
+    mean_pixel_value = pixel_sum / (num_pixels * 255)
+
+    # Determine the background color based on the mean pixel value
+    return mean_pixel_value < 0.5
 
 # Run the Flask app
 if __name__ == '__main__':
