@@ -23,7 +23,7 @@ spec:
         - containerPort: 5000
         volumeMounts:
         - name: model-volume
-          mountPath: /models
+          mountPath: /model
       volumes:
       - name: model-volume
         persistentVolumeClaim:

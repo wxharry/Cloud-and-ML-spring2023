@@ -16,14 +16,7 @@ spec:
         args: ["--epochs=2", "--save-model"]
         volumeMounts:
         - name: model-volume
-          mountPath: /models
-        resources:
-          limits:
-            cpu: "1"
-            memory: "1Gi"
-          requests:
-            cpu: "500m"
-            memory: "500Mi"
+          mountPath: /model
       restartPolicy: Never
       volumes:
       - name: model-volume
