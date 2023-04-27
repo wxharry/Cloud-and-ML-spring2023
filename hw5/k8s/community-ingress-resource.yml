@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress-resource
+  annotations:
+    kubernetes.io/ingress.class: public-iks-k8s-nginx
+spec:
+  tls:
+  - hosts:
+    - xw2788-us-east-1-cx2-2x4-4f27b99c6360f285c2c732f9adc614f1-0000.us-east.containers.appdomain.cloud
+    secretName: xw2788-us-east-1-cx2-2x4-4f27b99c6360f285c2c732f9adc614f1-0000
+  rules:
+  - host: xw2788-us-east-1-cx2-2x4-4f27b99c6360f285c2c732f9adc614f1-0000.us-east.containers.appdomain.cloud
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: mnist-service
+            port:
+              number: 80
+
